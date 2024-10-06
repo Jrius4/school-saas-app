@@ -8,47 +8,56 @@ const menuItems = [
             {
                 icon: "/home.png",
                 label: "Home",
-                href: "/"
+                href: "/",
+                visible: ["admin", "teacher", "student", "parent"]
             },
             {
                 icon: "/teacher.png",
                 label: "Teachers",
-                href: "/teachers"
+                href: "/teachers",
+                visible: ["admin", "teacher",]
             },
             {
                 icon: "/student.png",
                 label: "Students",
-                href: "/students"
+                href: "/students",
+                visible: ["admin", "teacher",]
             },
             {
                 icon: "/parent.png",
                 label: "Parents",
-                href: "/parents"
+                href: "/parents",
+                visible: ["admin", "teacher",]
             },
             {
                 icon: "/class.png",
                 label: "Classes",
-                href: "/classes"
+                href: "/classes",
+                visible: ["admin", "teacher",]
             },
             {
                 icon: "/lesson.png",
                 label: "Lessons",
-                href: "/lessons"
+                href: "/lessons",
+                visible: ["admin", "teacher"]
             },
             {
                 icon: "/attendance.png",
                 label: "Attendance",
-                href: "/classes"
+                href: "/classes",
+                visible: ["admin", "teacher"]
             },
             {
                 icon: "/calendar.png",
                 label: "Events",
-                href: "/events"
+                href: "/events",
+                visible: ["admin", "teacher", "student", "parent"]
             },
             {
                 icon: "/message.png",
                 label: "Messages",
-                href: "/messages"
+                href: "/messages",
+                visible: ["admin", "teacher", "student", "parent"]
             },
         ]
     },
@@ -58,7 +67,8 @@ const menuItems = [
             {
                 icon: "/profile.png",
                 label: "Profile",
-                href: "/profile"
+                href: "/profile",
+                visible: ["admin", "teacher", "student", "parent"]
             },
             {
                 icon: "/setting.png",
