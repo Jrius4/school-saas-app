@@ -117,7 +117,7 @@ const menuItems = [
     },
 ];
 
-// TODO: MENU 1:22:55
+
 const Menu = () => {
     return (
         <div className="mt-4 text-sm">
@@ -129,7 +129,7 @@ const Menu = () => {
                             if (j.visible.includes(role)) {
                                 return (
 
-                                    <Link href={j.href} className="flex items-center justify-center lg:justify-start gap-4 text-gray-500 py-2 rounded-md hover:bg-lamaSkyLight" key={j.label} >
+                                    <Link href={j.href} className="flex items-center justify-center lg:justify-start gap-4 text-gray-500 py-2 md:px-2 rounded-md hover:bg-lamaSkyLight" key={j.label} >
                                         <Image src={j.icon} alt="" width={20} height={20} /> <span className="hidden lg:block">{j.label}</span>
                                     </Link>
                                 )
